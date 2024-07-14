@@ -5,7 +5,7 @@ from .models import Restaurant, Item
 
 
 class RestaurantAdmin(admin.ModelAdmin):
-    search_fields = ['name', 'location', 'id','lat_long' ]  
+    search_fields = ['name', 'location', 'id','lat_long']  
 
 admin.site.register(Restaurant, RestaurantAdmin)
 
