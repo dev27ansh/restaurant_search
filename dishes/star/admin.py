@@ -1,11 +1,11 @@
 from django.contrib import admin
-from .models import Restaurant, Item
+from .models import Restaurant, Item 
 
 
 
 
 class RestaurantAdmin(admin.ModelAdmin):
-    search_fields = ['name', 'location', 'id','lat_long' , ' full_details'  ]  
+    search_fields = ['name', 'location', 'id','lat_long' ]  
 
 admin.site.register(Restaurant, RestaurantAdmin)
 
